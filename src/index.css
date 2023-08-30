@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  width: 100vw;
+  height: 100vh;
+
+  color: #232323;
+}
+
+body {
+  margin: 0;
+  background-image: url('/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'Lato', sans-serif;
+  color: #232323;
+
+  overflow-x: hidden;
+}
+
+.head_text {
+  font-family: 'Playfair Display', serif;
+}
+
+.body{
+  font-family: 'Lato', sans-serif;
+}
+
+.text-fill-transparent { 
+  -webkit-text-fill-color: transparent; 
+}
+
+.text-stroke-black { 
+  -webkit-text-stroke-color: #232323; 
+}
+
+.text-stroke { 
+  -webkit-text-stroke-width: 1px;
+}
+
+.paint-fsm { paint-order: fill stroke markers }
+.paint-fms { paint-order: fill markers stroke }
+.paint-sfm { paint-order: stroke fill markers }
+.paint-smf { paint-order: stroke markers fill }
+.paint-mfs { paint-order: markers fill stroke }
+.paint-msf { paint-order: markers stroke fill }
+
+.gradient_color{
+  background-image: linear-gradient(to right, rgba(175, 200, 255, 0.945), rgb(192, 255, 156));
+}
